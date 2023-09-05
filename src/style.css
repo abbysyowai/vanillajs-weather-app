@@ -5,12 +5,12 @@
 
 
 .weather-app {
-  max-width: 600px;
+  max-width: 500px;
   margin: 30px auto;
   padding: 10px;
   border: 1px solid black;
   border-radius: 15px;
-  background: linear-gradient(to top, rgb(238, 144, 144), rgb(2, 2, 17 ,0.9) );
+  background: linear-gradient(to top, #39b1e1, #210ca9);
   text-align: center;
   
 }
@@ -25,7 +25,7 @@
 }
 
 .temperature {
-    font-size: 50px;
+    font-size: 60px;
     color: black;
 }
 
@@ -48,7 +48,7 @@
     
 }
 .weather-factors {
-    margin: 20px;
+    margin: 10px;
     
 }
 
@@ -59,11 +59,11 @@
 }
 
 .temperature-factors {
-    margin: 20px;
+    margin: 10px;
 }
 
 .weather-emoji {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .units {
@@ -73,6 +73,20 @@
     color: black;
 }
 
+.text-form {
+    margin: 30px;
+}
+
+.temperature .active {
+    color: black;
+    cursor: default;
+}
+
+.temperature .active:hover {
+    text-decoration: none;
+}
+
+
 h1 {
   font-size: 30px;
   line-height: 25px;
@@ -81,6 +95,7 @@ h1 {
   margin: 10px;
 
 }
+
 
 li {
     list-style: none;   
