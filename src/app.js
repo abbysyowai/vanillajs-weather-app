@@ -40,9 +40,22 @@ function displayTemperature(response) {
 
 }
 
-let apiKey = "139004ab287c65e0334c48f44c5d1413";
-let city ="nairobi"
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?&units=metric&appid=${apiKey}&q=${city}`;
+function search(city) {
+    let apiKey = "139004ab287c65e0334c48f44c5d1413";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?&units=metric&appid=${apiKey}&q=${city}`;
+    axios.get(apiUrl).then(displayTemperature);
+}
 
-console.log(apiUrl)
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value)
+}
+
+search("New york")
+
+
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit)
