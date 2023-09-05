@@ -21,7 +21,7 @@
 
 .names {
     text-align: center;
-    color: white;
+    color: rgb(242, 213, 213);
 }
 
 .temperature {
@@ -76,7 +76,7 @@ h1 {
   font-size: 30px;
   line-height: 25px;
   text-align: center;
-  color: white;
+  color: rgb(242, 213, 213);
   margin: 10px;
 
 }
