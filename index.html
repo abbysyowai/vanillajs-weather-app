@@ -4,57 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="src/style.css">
+   
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/6f812091e5.js" crossorigin="anonymous"></script>
 
+
+    <link rel="stylesheet" href="src/style.css">
+
 </head>
 <body>
 
-    <div>
+    <div class="weather">
+        <div class="weather-app">
+
         <h1>
-            New York
+            <strong>New York</strong>
         </h1>
 
-        <ul>
-            <li>
-                30°
+        <ul class="names">
+            <li class="weather-icon">
+                🌤️
             </li>
-            <li>
-                September
+            <li class="temperature">
+                <strong>30</strong><span class="units"><a href="">°C</a> | 
+                    <a href="">°F</a>
+                </span>
             </li>
-            <li>
+            <li class="description">
+                Sunny
+            </li>
+            <li class="date">
                 Friday 09 2023
             </li>
         </ul>
 
         <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    
-                    <ul>
-                        <li>58</li>
-                        <li><i class="fa-solid fa-cloud-showers-water"></i></li>
-                    </ul>
+            <div class="row weather-factors">
+                <div class="col precip">
                     Precipitation
-                </div>
-                <div class="col-3">
+                    <li>
+                        <i class="fa-solid fa-cloud-showers-water"></i>
+                    </li>
+                    <li>
+                        58
+                    </li>
+                        
                     
-                    <ul>
-                        <li>89</li>
-                        <li><i class="fa-solid fa-droplet"></i></li>
-                    </ul>
+                </div>
+                <div class="col humid">
                     Humidity
-                </div>
-                <div class="col-3">
+                    <li>
+                        <i class="fa-solid fa-droplet"></i>
+                    </li>
+                    <li>
+                        89
+                    </li>
+                        
                     
-                    <ul>
-                        <li>78</li>
-                        <li><i class="fa-solid fa-wind"></i></li>
-                    </ul>
+                </div>
+                <div class="col windy">
                     Wind
+                     <li>
+                        <i class="fa-solid fa-wind"></i>
+                    </li> 
+                    <li>
+                        78
+                    </li>
+                                  
+                    
                 </div>
             </div>
 
@@ -62,49 +81,66 @@
 
 
         <div class="container">
-            <div class="row">
+            <div class="row temperature-factors">
                 
-                <div class="col">
+                <div class="col day">
                     Tue
-                    <ul>
-                        <li><i class="fa-solid fa-cloud-showers-heavy"></i></li>
-                        <li>20°</li>
-                    </ul>
+                        <li class="weather-emoji">
+                            🌧️
+                        </li>
+                        <li>
+                            20°
+                        </li>
                 </div>
+
                 <div class="col">
-                    Wed
-                    <ul>
-                        <li><i class="fa-solid fa-cloud-sun"></i></li>
-                        <li>25°</li>
-                    </ul>
+                    Wed                    
+                        <li class="weather-emoji">
+                            ⛈️
+                        </li>
+                        <li>
+                            25°
+                        </li>                   
                 </div>
+
                 <div class="col">
-                    Thur
-                    <ul>
-                        <li><i class="fa-solid fa-cloud-rain"></i></li>
-                        <li>30°</li>
-                    </ul>
+                    Thur                   
+                        <li class="weather-emoji">
+                            🌤️
+                        </li>
+                        <li>
+                            30°
+                        </li>
                 </div>
+
                 <div class="col">
-                    Fri
-                    <ul>
-                        <li><i class="fa-solid fa-cloud-sun-rain"></i></li>
-                        <li>10°</li>
-                    </ul>
+                    Fri                   
+                        <li class="weather-emoji">
+                            🌥️
+                        </li>
+                        <li>
+                            10°
+                        </li>               
                 </div>
+
                 <div class="col">
-                    Sat
-                    <ul>
-                        <li><i class="fa-solid fa-sun" style="color: #e5a906;"></i></li>
-                        <li>30°</li>
-                    </ul>
+                    Sat                   
+                        <li class="weather-emoji">
+                            <i class="fa-solid fa-sun" style="color: #e5a906;"></i>
+                        </li>
+                        <li>
+                            30°
+                        </li>               
                 </div>
             </div>
 
         </div>
+        
 
-
-
+        <small>
+            <a href="https://github.com/abbysyowai/vanillajs-weather-app" target="_blank">Open-source code</a> by Abigael
+        </small>
+    </div>
     </div>
     
 </body>
