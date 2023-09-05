@@ -10,6 +10,9 @@
 
     <script src="https://kit.fontawesome.com/6f812091e5.js" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
 
     <link rel="stylesheet" href="src/style.css">
 
@@ -19,21 +22,19 @@
     <div class="weather">
         <div class="weather-app">
 
-        <h1>
-            <strong>New York</strong>
-        </h1>
+        <h1 id="city"></h1>
 
         <ul class="names">
             <li class="weather-icon">
                 🌤️
             </li>
             <li class="temperature">
-                <strong>30</strong><span class="units"><a href="">°C</a> | 
+                <strong id="temperature"></strong><span class="units">°C | 
                     <a href="">°F</a>
                 </span>
             </li>
-            <li class="description">
-                Sunny
+            <li class="description" id="description">
+                
             </li>
             <li class="date">
                 Friday 09 2023
@@ -43,7 +44,7 @@
         <div class="container">
             <div class="row weather-factors">
                 <div class="col precip">
-                    Precipitation
+                    Precipitation <span></span>
                     <li>
                         <i class="fa-solid fa-cloud-showers-water"></i>
                     </li>
@@ -54,23 +55,23 @@
                     
                 </div>
                 <div class="col humid">
-                    Humidity
+                    Humidity 
                     <li>
                         <i class="fa-solid fa-droplet"></i>
                     </li>
                     <li>
-                        89
+                        <span id="humidity"></span>%
                     </li>
                         
                     
                 </div>
                 <div class="col windy">
-                    Wind
+                    Wind 
                      <li>
                         <i class="fa-solid fa-wind"></i>
                     </li> 
                     <li>
-                        78
+                        <span id="wind"></span>Km/H
                     </li>
                                   
                     
@@ -142,6 +143,6 @@
         </small>
     </div>
     </div>
-    
+<script src="src/app.js"></script>
 </body>
 </html>
